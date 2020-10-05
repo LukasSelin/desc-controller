@@ -69,7 +69,8 @@ while(True):
     desiredHight = 250
     offsetHight = desiredHight - currentHight
     currentHight = move(offsetHight)
-
+    print("Current hight: " + currentHight)
     desiredHight = 450
     offsetHight = desiredHight - currentHight
     currentHight = move(offsetHight)
+    print("Current hight: " + currentHight)
