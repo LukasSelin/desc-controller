@@ -68,10 +68,14 @@ currentHight = maxHight
 while(True):
     desiredHight = 250
     offsetHight = desiredHight - currentHight
-    currentHight = move(offsetHight)
+    move(offsetHight)
+    currentHight = desiredHight
     print("Current hight: {} ".format(currentHight))
+
     desiredHight = 450
     offsetHight = desiredHight - currentHight
-    currentHight = move(offsetHight)
+    move(offsetHight)
+    currentHight = desiredHight
+
     print("Current hight: {} ".format(currentHight))
 
