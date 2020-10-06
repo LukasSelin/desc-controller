@@ -11,9 +11,9 @@ maxHight = 650
 currentHight = maxHight
 
 def initPorts():
-    GPIO.setup(upPort, GPIO.OUT)
-    GPIO.setup(downPart, GPIO.OUT)
-    GPIO.setup(controllPort, GPIO.OUT)
+    GPIO.setup(upPort, GPIO.OUT, pull_up_down=GPIO.PUD_DOWN)
+    GPIO.setup(downPart, GPIO.OUT, pull_up_down=GPIO.PUD_DOWN)
+    GPIO.setup(controllPort, GPIO.OUT, pull_up_down=GPIO.PUD_DOWN)
 
 def calibrate():
     print("Started calibrating")
