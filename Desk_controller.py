@@ -31,6 +31,8 @@ def moveUp(offsetSeconds):
     t_end = time.time() + offsetSeconds
     while time.time() < t_end
         GPIO.output(controllPort, GPIO.input(upPort))
+        print("Moving down for {} seconds".format(GPIO.input(upPort)))
+
     
     GPIO.output(controllPort, 0)
     print("Stopped going up")
@@ -40,6 +42,8 @@ def moveDown(offsetSeconds):
     t_end = time.time() + offsetSeconds
     while time.time() < t_end
         GPIO.output(controllPort, GPIO.input(downPart))
+        print("Moving down for {} seconds".format(GPIO.input(downPart)))
+
     
     GPIO.output(controllPort, 0)
     print("Stopped going down")
