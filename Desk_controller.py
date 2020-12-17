@@ -28,25 +28,20 @@ def calibrate():
 
 def moveUp(offsetSeconds):
     print("Moving up for {} seconds".format(offsetSeconds))
-    GPIO.output(controllPort, GPIO.input(upPort))
-
-    #GPIO.output(controllPort, 1)
-
-    time.sleep(offsetSeconds)
+    t_end = time.time() + offsetSeconds
+    while time.time() < t_end
+        GPIO.output(controllPort, GPIO.input(upPort))
     
     GPIO.output(controllPort, 0)
-    #GPIO.output(controllPort, 0)
     print("Stopped going up")
 
 def moveDown(offsetSeconds):
     print("Moving down for {} seconds".format(offsetSeconds))
-    GPIO.output(controllPort, GPIO.input(downPart))
-
-    #GPIO.output(controllPort, 1)
-    time.sleep(offsetSeconds)
+    t_end = time.time() + offsetSeconds
+    while time.time() < t_end
+        GPIO.output(controllPort, GPIO.input(downPart))
     
     GPIO.output(controllPort, 0)
-    #GPIO.output(controllPort, 0)
     print("Stopped going down")
 
 def move(offsetHight):
