@@ -47,7 +47,7 @@ def moveDown(offsetSeconds):
 
     time.sleep(offsetSeconds)
     
-    GPIO.output(downPart, 0)
+    GPIO.output(controllPort, 0)
     #GPIO.output(controllPort, 0)
     print("Stopped going down")
 
