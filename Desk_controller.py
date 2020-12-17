@@ -22,7 +22,7 @@ def initPorts():
 
 def calibrate():
     print("Started calibrating")
-    moveUp(20)
+    moveUp(2)
     print("Calibrate complete")
 
 
