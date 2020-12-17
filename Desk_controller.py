@@ -43,8 +43,6 @@ def moveDown(offsetSeconds):
     GPIO.output(controllPort, GPIO.input(downPart))
 
     #GPIO.output(controllPort, 1)
-    offsetSeconds = offsetSeconds * -1
-
     time.sleep(offsetSeconds)
     
     GPIO.output(controllPort, 0)
@@ -67,6 +65,6 @@ calibrate()
 currentHight = maxHight
 
 while(True):
-    moveUp(5)
     moveDown(5)
+    moveUp(5)
 
